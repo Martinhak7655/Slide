@@ -15,7 +15,7 @@ prev.onclick = () => {
 }
 
 next.onclick = () => {
-    if(i <= 0) i = images.length;
-    i--;
+    if(i >= images.length-1) i = -1;
+    i++;
     return setImg();
 }
